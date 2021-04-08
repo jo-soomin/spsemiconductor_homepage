@@ -1,6 +1,6 @@
 # SPsemiconductor_homepage
 
-<h1>SP반도체통신 홈페이지 개발</h1>
+<h2>SP반도체통신 홈페이지 개발</h2>
 
 OS : Ubuntu 20.04.2 LTS
 
