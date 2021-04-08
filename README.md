@@ -32,7 +32,7 @@ DataBase : Oracle 12c
 
 <h3>접속주소</h3>
 
-- <a href='/www.spsemi.com'>www.spsemi.com</a>
+- www.spsemi.com
 
 ![메인](https://user-images.githubusercontent.com/59190867/111241042-abe67180-863f-11eb-91bc-c4dccade447e.PNG)
 
