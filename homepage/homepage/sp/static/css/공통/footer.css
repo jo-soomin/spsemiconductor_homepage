@@ -1,0 +1,99 @@
+@media ( min-width: 1024px ) {
+
+/* 푸터 */
+.footer_wrapper{
+    width:80%;
+    position:relative;
+    margin: 50px auto;
+    padding: 42px 0 50px;
+    border-top: 1px solid #e7e7e7;
+}
+.footer_wrapper ul{
+    list-style: none;
+    display: flex;
+}
+.footer_wrapper ul li{
+    padding: 20px 20px;
+}
+.footer_wrapper ul li a{
+    text-decoration:none;
+    color:black;
+}
+.footer_wrapper ul li:after{
+    content: "";
+    width: 1px;
+    height: 15px;
+    position:absolute;
+    background: black;
+    margin-left: 20px;
+}
+.footer_info{
+    color: #949494;
+    text-align:left;
+    padding-left: 20px;
+    margin-top:20px;
+}
+.footer_info_회사명{
+    margin-bottom:15px;
+}
+.footer_info_주소{
+    margin-bottom:15px;
+}
+
+}
+
+/* 모바일 */
+@media ( max-width: 1023px ) {
+
+/* 푸터 */
+.footer_wrapper{
+    width:100%;
+    position:relative;
+    margin: 30px auto;
+    padding: 10px 0 10px;
+    border-top: 1px solid #e7e7e7;
+}
+.footer_wrapper ul{
+    list-style: none;
+    display: flex;
+}
+.footer_wrapper ul li{
+    padding: 20px 15px;
+}
+.footer_wrapper ul li a{
+    text-decoration:none;
+    color:black;
+    font-size:10px;
+}
+.footer_wrapper ul li:after{
+    content: "";
+    width: 1px;
+    height: 13px;
+    position:absolute;
+    background: black;
+    margin-left: 15px;
+    margin-top:7px;
+}
+.footer_info{
+    color: #949494;
+    text-align:left;
+    padding-left: 20px;
+    margin-top:10px;
+}
+.footer_info_회사명{
+    font-size: 15px;
+    margin-bottom:10px;
+}
+.footer_info_대표이사{
+    font-size: 12px;
+    margin-bottom:10px;
+}
+.footer_info_주소{
+    font-size: 12px;
+    margin-bottom:10px;
+}
+.footer_info_copyright{
+    font-size: 12px;
+}
+
+}

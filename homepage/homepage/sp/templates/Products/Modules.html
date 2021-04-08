@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>제품군</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Products/Modules.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/background.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/location.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/footer.css' %}">
+	<script type="text/javascript" src="{% static 'js/Products/Modules.js' %}"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--메뉴 영역-->
+<div id ="menu">
+			<!--	메인메뉴 logo 영역	-->
+			<div id="main_logo_wrapper">
+				<a href="/"><img src="{% static 'img/white_logo.png' %}" id="main_logo"></a>
+			</div>
+			<!--	메인메뉴 title 영역	-->
+			<div id="main_title_wrapper">
+				<ul>
+					<li class="main_li">
+						<a class="main_title" href="ceo인사말">About us</a>
+						<ul class="sub">
+							<li><a href="ceo인사말" class=sub-title>ceo 인사말</a></li>
+							<li><a href="주요연혁" class=sub-title>주요 연혁</a></li>
+							<li><a href="글로벌파트너" class=sub-title>글로벌파트너</a></li>
+							<li><a href="사업장소개" class=sub-title>사업장 소개</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="Discretes">Products</a>
+						<ul class="sub">
+							<li><a href="Discretes" class="sub-title">Discretes</a></li>
+							<li><a href="Modules" class="sub-title">Modules</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="품질경영">Service</a>
+						<ul class="sub">
+							<li><a href="품질경영" class="sub-title">품질경영</a></li>
+							<li><a href="Certification" class="sub-title">인증사항</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="공지사항">Supports & Contacts</a>
+						<ul class="sub">
+							<li><a href="공지사항" class="sub-title">공지사항</a></li>
+							<li><a href="문의사항" class="sub-title">문의사항</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		<!--	/메인메뉴 title 영역	-->
+			<!--	모바일 메뉴바		-->
+            <div class="mobile_nav_wrapper">
+                <nav class="mobile-nav-wrap" role="navigation">
+                    <ul class="mobile-header-nav">
+					  <li class="mobile-header-nav-main-li">
+						  <a href="ceo인사말" class="mobile-header-nav-main-title">About us</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="ceo인사말" class="sub-title">ceo 인사말</a>
+								  <a href="주요연혁" class="sub-title">주요 연혁</a>
+								  <a href="글로벌파트너" class="sub-title">글로벌파트너</a>
+								  <a href="사업장소개" class="sub-title">사업장 소개</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="Discretes" class="mobile-header-nav-main-title">Products</a>
+						   <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="Discretes" class="sub-title">Discretes</a>
+								  <a href="Modules" class="sub-title">Modules</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="품질경영" class="mobile-header-nav-main-title">Service</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="품질경영" class="sub-title">품질경영</a>
+								  <a href="Certification" class="sub-title">인증사항</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="공지사항" class="mobile-header-nav-main-title">Supports & Contacts</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="공지사항" class="sub-title">공지사항</a>
+								  <a href="문의사항" class="sub-title">문의사항</a>
+							  </li>
+						  </ul>
+					  </li>
+					</ul>
+                </nav>
+                <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+                    <span class="menu-item"></span>
+					<span class="menu-item"></span>
+					<span class="menu-item"></span>
+                </a>
+            </div>
+            <!--/모바일 메뉴바-->
+	</div>
+<!--/메뉴 영역-->
+<!--본문 영역-->
+<section class="section01">
+    <div class="bg_img">
+		<div class="bg_text_wrapper">
+			<p class="bg_text_eng">SP semiconductor Co., Ltd.</p>
+			<p class="bg_text_kor">Global 전력반도체 기업</p>
+		</div>
+	</div>
+	<div class="location">
+		<ul>
+			<li><img src="{% static 'img/공통_img/home_icon.png'%}"></li>
+			<li><img src="{% static 'img/공통_img/arrow.png'%}"></li>
+			<li><span>Products</span></li>
+			<li><img src="{% static 'img/공통_img/arrow.png'%}"></li>
+			<li><span>Modules</span></li>
+		</ul>
+	</div>
+    <div class="sub_sub_btn_wrapper">
+        <ul>
+            <li id="Modules"><a href="Modules" class="sub_sub_title">제품군</a></li>
+			<li id="Modules_공정도"><a href="Modules_공정도" class="sub_sub_title">공정도</a></li>
+        </ul>
+    </div>
+</section>
+<section class="section02">
+	<div class="title_wrapper">
+		<img src="{% static 'img/item.png'%}" class="box_icon" ondragstart="return false"><span> 제품군</span>
+	</div>
+	<div class="product_wrapper">
+		<ul>
+			<li class="product_li">
+				<img class="product_img" src="{% static 'img/Products/Modules/product/SOT-227.jpg'%}" ondragstart="return false" id="SOT-227">
+				<span class="product_title">SOT-227</span>
+				<div class="tag_list">#산업용 전력 반도체&nbsp;&nbsp;&nbsp;#Lead Qty : 4</div>
+			</li>
+			<li class="product_li">
+				<img class="product_img" src="{% static 'img/Products/Modules/product/CASE.jpg'%}" ondragstart="return false" id="CASE">
+				<span class="product_title">CASE</span>
+				<div class="tag_list">#차량용 전력 반도체&nbsp;&nbsp;&nbsp;#Lead Qty : 11</div>
+
+			</li>
+			<li class="product_li">
+				<img class="product_img" src="{% static 'img/Products/Modules/product/DSC.jpg'%}" ondragstart="return false" id="DSC">
+				<span class="product_title">DSC</span>
+				<div class="tag_list">#산업용 전력 반도체&nbsp;&nbsp;&nbsp;#Lead Qty : 14</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<!--/본문 영역-->
+
+<!--푸터 영역-->
+<footer>
+	<div class="footer_wrapper">
+		<ul>
+			<li>
+				<a href="#">개인정보보호방침</a>
+			</li>
+			<li>
+				<a href="Discretes">제품소개</a>
+			</li>
+			<li>
+				<a href="사업장소개">사업장안내</a>
+			</li>
+		</ul>
+		<div class="footer_info">
+			<p class="footer_info_회사명">(주)에스피반도체통신</p>
+			<p class="footer_info_대표이사">대표이사 윤수열</p>
+			<p class="footer_info_주소">경기도 부천시 원미구 평천로 832번길 30(도당동)&nbsp;&nbsp;&nbsp;&nbsp;<span>TEL: 032-680-7777</span></p>
+			<p class="footer_info_copyright">COPYRIGHT (C) SPSEMICONDUCTOR & COMMUNICATION.  ALL RIGHTS RESERVED.</p>
+		</div>
+	</div>
+</footer>
+<!--/푸터 영역-->
+
+<!--모달영역-->
+<div class="modal-wrapper">
+    <div class="content">
+		<img src="" id="modal_img">
+    </div>
+</div>
+<!--/모달영역-->
+</body>
+</html>

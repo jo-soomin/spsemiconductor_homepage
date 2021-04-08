@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+        {% load static %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/slide.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/location.css' %}">
+		<script type="text/javascript" src="{% static 'js/slide.js' %}"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+	<div id ="menu">
+			<!--	메인메뉴 logo 영역	-->
+			<div id="main_logo_wrapper">
+				<a href="/"><img src="{% static 'img/white_logo.png' %}" id="main_logo"></a>
+			</div>
+			<!--	메인메뉴 title 영역	-->
+			<div id="main_title_wrapper">
+				<ul>
+					<li class="main_li">
+						<a class="main_title" href="ceo인사말">About us</a>
+						<ul class="sub">
+							<li><a href="ceo인사말" class=sub-title>ceo 인사말</a></li>
+							<li><a href="주요연혁" class=sub-title>주요 연혁</a></li>
+							<li><a href="글로벌파트너" class=sub-title>글로벌파트너</a></li>
+							<li><a href="사업장소개" class=sub-title>사업장 소개</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="Discretes">Products</a>
+						<ul class="sub">
+							<li><a href="Discretes" class="sub-title">Discretes</a></li>
+							<li><a href="Modules" class="sub-title">Modules</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="품질경영">Service</a>
+						<ul class="sub">
+							<li><a href="품질경영" class="sub-title">품질경영</a></li>
+							<li><a href="Certification" class="sub-title">인증사항</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="공지사항">Supports & Contacts</a>
+						<ul class="sub">
+							<li><a href="공지사항" class="sub-title">공지사항</a></li>
+							<li><a href="문의사항" class="sub-title">문의사항</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		<!--	/메인메뉴 title 영역	-->
+			<!--	모바일 메뉴바		-->
+				<div class="mobile_nav_wrapper">
+				  <nav class="mobile-nav-wrap" role="navigation">
+					<ul class="mobile-header-nav">
+					  <li class="mobile-header-nav-main-li">
+						  <a href="ceo인사말" class="mobile-header-nav-main-title">About us</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="ceo인사말" class="sub-title">ceo 인사말</a>
+								  <a href="주요연혁" class="sub-title">주요 연혁</a>
+								  <a href="글로벌파트너" class="sub-title">글로벌파트너</a>
+								  <a href="사업장소개" class="sub-title">사업장 소개</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="Discretes" class="mobile-header-nav-main-title">Products</a>
+						   <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="Discretes" class="sub-title">Discretes</a>
+								  <a href="Modules" class="sub-title">Modules</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="품질경영" class="mobile-header-nav-main-title">Service</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="품질경영" class="sub-title">품질경영</a>
+								  <a href="Certification" class="sub-title">인증사항</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="공지사항" class="mobile-header-nav-main-title">Supports & Contacts</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="공지사항" class="sub-title">공지사항</a>
+								  <a href="문의사항" class="sub-title">문의사항</a>
+							  </li>
+						  </ul>
+					  </li>
+					</ul>
+				  </nav>
+
+				  <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+					<span class="menu-item"></span>
+					<span class="menu-item"></span>
+					<span class="menu-item"></span>
+				  </a>
+				</div>
+				<!--/모바일 메뉴바-->
+	</div>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <section class="sec_01">
+                        <div class="title">
+							<div class="content0">
+								<span class="content_main">전력반도체 조립 분야의 기술 리더, SP 반도체통신</span>
+								<br>
+								<br>
+								<span class="content_sub">숙련된 인재, 전공정 운영 및 기술 네트워크를 바탕으로 한 20년 이상 축적된 연구 개발 자원에 대한 지속적으로 투자합니다</span>
+							</div>
+						</div>
+                    </section>
+                </div>
+
+            <div class="swiper-slide">
+				<section class="sec_02">
+                        <div class="title">
+                            <div class="content1">
+								<span class="content_main">고객을 위한 가치를 창조하는 SP 반도체통신</span>
+								<br>
+								<br>
+								<span class="content_sub">반도체 후공정의 완벽한 솔루션과 폭넓은 서비스를 제공하고, 고객의 신뢰를 위하여 관련된 솔루션과 서비스는 IATF16949 품질 표준에 의해 검증됩니다.</span>
+							</div>
+                        </div>
+				</section>
+			</div>
+            <div class="swiper-slide">
+				<section class="sec_03">
+                        <div class="title">
+                            <div class="content2">
+								<span class="content_main">국제 사회의 일원으로서 사회적 책임을 다하는 SP 반도체통신</span>
+								<br>
+								<br>
+								<span class="content_sub">글로벌 반도체 기업들이 수행하는 기업의 사회적 책임 규약을 준수합니다.</span>
+
+							</div>
+                        </div>
+				</section>
+			</div>
+            <div class="swiper-slide">
+				<section class="sec_04">
+                        <div class="title">
+                            <div class="content3">
+								<span class="content_main">지구의 미래를 위한 환경방침을 준수하는 SP 반도체통신</span>
+								<br>
+								<br>
+								<span class="content_sub">환경 관련 법과 조례를 충실히 지키고 있으며, 이를 위한 모든 행동은 ISO14001이 제공하는 환경 경영 시스템의 표준에 따릅니다.</span>
+							</div>
+                        </div>
+				</section>
+			</div>
+        </div>
+		<div id="footer">
+						<div id="footer_info">
+							<p>(주)에스피반도체통신&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>대표</span> 윤수열 </p>
+							<p>경기도 부천시 원미구 평천로 832번길 30(도당동)&nbsp;&nbsp;&nbsp;<img src="{% static 'img/tel.png'%}">&nbsp;<span>032-680-7777</span></p>
+							<p>COPYRIGHT (C) SPSEMICONDUCTOR & COMMUNICATION.  ALL RIGHTS RESERVED.</p>
+						</div>
+		</div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+</body>
+</html>

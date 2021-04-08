@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>알림</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/준비중화면.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="vertical-container background" id="main">
+  <div class="vertical-body">
+    <div class="container">
+      <h3 class="content01">지원하지 않는 브라우저 입니다.</h3>
+      <h3 class="content02">하단의 지원하는 브라우저로 접속해 주시기 바랍니다.</h3>
+        <ul>
+            <li>
+                <a href="https://www.google.com/intl/ko/chrome/"><img src="{% static 'img/공통_img/chrome.svg'%}"></a>
+            </li>
+            <li>
+                <a href="https://www.microsoft.com/ko-kr/edge"><img src="{% static 'img/공통_img/edge.svg'%}"></a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/ko/firefox/download/"><img src="{% static 'img/공통_img/firefox.svg'%}"></a>
+            </li>
+        </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>

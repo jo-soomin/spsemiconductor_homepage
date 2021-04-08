@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Modules_공정도</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Products/공정도.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/background.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/location.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/footer.css' %}">
+	<script type="text/javascript" src="{% static 'js/Products/공정도.js' %}"></script>
+	<!--	slide	-->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!--	상세공정도 fade in	-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!--	폰트		-->
+	<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--메뉴 영역-->
+<div id ="menu">
+			<!--	메인메뉴 logo 영역	-->
+			<div id="main_logo_wrapper">
+				<a href="/"><img src="{% static 'img/white_logo.png' %}" id="main_logo"></a>
+			</div>
+			<!--	메인메뉴 title 영역	-->
+			<div id="main_title_wrapper">
+				<ul>
+					<li class="main_li">
+						<a class="main_title" href="ceo인사말">About us</a>
+						<ul class="sub">
+							<li><a href="ceo인사말" class=sub-title>ceo 인사말</a></li>
+							<li><a href="주요연혁" class=sub-title>주요 연혁</a></li>
+							<li><a href="글로벌파트너" class=sub-title>글로벌파트너</a></li>
+							<li><a href="사업장소개" class=sub-title>사업장 소개</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="Discretes">Products</a>
+						<ul class="sub">
+							<li><a href="Discretes" class="sub-title">Discretes</a></li>
+							<li><a href="Modules" class="sub-title">Modules</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="품질경영">Service</a>
+						<ul class="sub">
+							<li><a href="품질경영" class="sub-title">품질경영</a></li>
+							<li><a href="Certification" class="sub-title">인증사항</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="공지사항">Supports & Contacts</a>
+						<ul class="sub">
+							<li><a href="공지사항" class="sub-title">공지사항</a></li>
+							<li><a href="문의사항" class="sub-title">문의사항</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		<!--	/메인메뉴 title 영역	-->
+			<!--	모바일 메뉴바		-->
+            <div class="mobile_nav_wrapper">
+                <nav class="mobile-nav-wrap" role="navigation">
+                    <ul class="mobile-header-nav">
+					  <li class="mobile-header-nav-main-li">
+						  <a href="ceo인사말" class="mobile-header-nav-main-title">About us</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="ceo인사말" class="sub-title">ceo 인사말</a>
+								  <a href="주요연혁" class="sub-title">주요 연혁</a>
+								  <a href="글로벌파트너" class="sub-title">글로벌파트너</a>
+								  <a href="사업장소개" class="sub-title">사업장 소개</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="Discretes" class="mobile-header-nav-main-title">Products</a>
+						   <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="Discretes" class="sub-title">Discretes</a>
+								  <a href="Modules" class="sub-title">Modules</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="품질경영" class="mobile-header-nav-main-title">Service</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="품질경영" class="sub-title">품질경영</a>
+								  <a href="Certification" class="sub-title">인증사항</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="공지사항" class="mobile-header-nav-main-title">Supports & Contacts</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="공지사항" class="sub-title">공지사항</a>
+								  <a href="문의사항" class="sub-title">문의사항</a>
+							  </li>
+						  </ul>
+					  </li>
+					</ul>
+                </nav>
+                <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+                    <span class="menu-item"></span>
+					<span class="menu-item"></span>
+					<span class="menu-item"></span>
+                </a>
+            </div>
+            <!--/모바일 메뉴바-->
+	</div>
+<!--/메뉴 영역-->
+<!--본문 영역-->
+<section class="section01">
+    <div class="bg_img">
+		<div class="bg_text_wrapper">
+			<p class="bg_text_eng">SP semiconductor Co., Ltd.</p>
+			<p class="bg_text_kor">Global 전력반도체 기업</p>
+		</div>
+	</div>
+	<div class="location">
+		<ul>
+			<li><img src="{% static 'img/공통_img/home_icon.png'%}"></li>
+			<li><img src="{% static 'img/공통_img/arrow.png'%}"></li>
+			<li><span>Products</span></li>
+			<li><img src="{% static 'img/공통_img/arrow.png'%}"></li>
+			<li><span>Modules</span></li>
+			<li><img src="{% static 'img/공통_img/arrow.png'%}"></li>
+			<li><span>공정도</span></li>
+		</ul>
+	</div>
+    <div class="sub_sub_btn_wrapper">
+        <ul>
+            <li id="Modules"><a href="Modules" class="sub_sub_title">제품군</a></li>
+			<li id="공정도"><a href="Modules_공정도" class="sub_sub_title">공정도</a></li>
+        </ul>
+    </div>
+</section>
+<section class="section02">
+	<div class="title_wrapper">
+		<img src="{% static 'img/item.png'%}" class="box_icon" ondragstart="return false"><span> 공정도</span>
+	</div>
+</section>
+<section class="section03">
+	<div class="공정도_wrapper">
+		  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<img src="{% static 'img/Products/Modules/process/main_slide/DA.jpg' %}" class="main_slide_img" draggable="false">
+		</div>
+		<div class="swiper-slide">
+			<img src="{% static 'img/Products/Modules/process/main_slide/X-RAY.jpg' %}" class="main_slide_img" draggable="false">
+		</div>
+		<div class="swiper-slide">
+			<img src="{% static 'img/Products/Modules/process/main_slide/WB.jpg' %}" class="main_slide_img" draggable="false">
+		</div>
+		<div class="swiper-slide">
+			<img src="{% static 'img/Products/Modules/process/main_slide/MOLD.jpg' %}" class="main_slide_img" draggable="false">
+		</div>
+		<div class="swiper-slide">
+			<img src="{% static 'img/Products/Modules/process/main_slide/TRIM&FORM.jpg' %}" class="main_slide_img" draggable="false">
+		</div>
+		<div class="swiper-slide">
+			<img src="{% static 'img/Products/Modules/process/main_slide/TEST.jpg' %}" class="main_slide_img" draggable="false">
+		</div>
+    </div>
+    <div class="swiper-pagination" id="pagination"></div>
+  </div>
+	<div class="sub-slide-info-container">
+		<div class="sub-slide-info-wrapper">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="sub-slide-info">
+							<img src="{% static 'img/Products/Modules/process/sub_slide/DA.svg'%}" class="sub-slide-info-img" ondragstart="return false">
+							<div class="sub-slide-info-title">Die Attach</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="sub-slide-info">
+							<img src="{% static 'img/Products/Modules/process/sub_slide/X-RAY.svg'%}" class="sub-slide-info-img" ondragstart="return false">
+							<div class="sub-slide-info-title">X - RAY</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="sub-slide-info">
+							<img src="{% static 'img/Products/Modules/process/sub_slide/WB.svg'%}" class="sub-slide-info-img" ondragstart="return false">
+							<div class="sub-slide-info-title">Wire Bond</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="sub-slide-info">
+							<img src="{% static 'img/Products/Modules/process/sub_slide/MOLD.svg'%}" class="sub-slide-info-img" ondragstart="return false">
+							<div class="sub-slide-info-title">Mold</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="sub-slide-info">
+							<img src="{% static 'img/Products/Modules/process/sub_slide/TRIM&FORM.svg'%}" class="sub-slide-info-img" ondragstart="return false">
+							<div class="sub-slide-info-title">TRIM / FORM</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="sub-slide-info">
+							<img src="{% static 'img/Products/Modules/process/sub_slide/TEST.svg'%}" class="sub-slide-info-img" ondragstart="return false">
+							<div class="sub-slide-info-title">Test & Marking</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sub-slide-arrow-wrapper">
+			<img src="{% static 'img/prev_arrow.png'%}" class="prev_btn">
+		<img src="{% static 'img/next_arrow.png'%}" class="next_btn">
+		</div>
+	</div>
+	</div>
+</section>
+<section class="section04">
+
+	<div class="process_detail_wrapper">
+		<h1>상세공정도</h1>
+		<div id="transcroller-body" class="aos-all">
+			<ul class="process_detail_ul">
+				<div class="aos-item" data-aos="fade-down">
+					<li class="process_detail_list">
+						<div class="process_detail_media_wrapper">
+							<iframe class="media_i" src="https://www.youtube.com/embed/u7RjJ6-f0Cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="process_detail_txt_wrapper">
+							<span class="process_num">01</span>
+							<h3 class="process_title">Die Attach</h3>
+							<p class="prodTxt1">Sawing 된 wafer 각각의 chip을 collect으로 pick up 하여 Lead Frame 위에 접착물을 사용 하여 접착시키는 공정</p>
+						</div>
+					</li>
+				</div>
+					<div class="aos-item" data-aos="fade-down">
+					<li class="process_detail_list">
+						<div class="process_detail_media_wrapper">
+							<iframe class="media_i" src="https://www.youtube.com/embed/cyFvMjmshoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="process_detail_txt_wrapper">
+							<span class="process_num">02</span>
+							<h3 class="process_title">X - RAY</h3>
+							<p class="prodTxt1">X-Ray 를 이용한 Chip solder void 검사 및 Solder Over Flow 등에 대한 불량 검출 공정</p>
+						</div>
+					</li>
+				</div>
+				<div class="aos-item" data-aos="fade-down">
+					<li class="process_detail_list">
+						<div class="process_detail_media_wrapper">
+							<iframe class="media_i" src="https://www.youtube.com/embed/A37Yfz48e7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="process_detail_txt_wrapper">
+							<span class="process_num">03</span>
+							<h3 class="process_title">Wire Bond</h3>
+							<p class="prodTxt1">Wire(Al, Au)를 이용하여 전기가 통할 수 있도록 Lead Frame과 chip을 연결시키는 공정</p>
+						</div>
+					</li>
+				</div>
+				<div class="aos-item" data-aos="fade-down">
+					<li class="process_detail_list">
+						<div class="process_detail_media_wrapper">
+							<iframe class="media_i" src="https://www.youtube.com/embed/tDevSFUJwCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="process_detail_txt_wrapper">
+							<span class="process_num">04</span>
+							<h3 class="process_title">Mold</h3>
+							<p class="prodTxt1">W/B이 완료된 반제품은 열, 습기 물리적 충격 등 외부환경에 취약하므로 이를 보완하기 위하여 열경화성 수지(EMC)로 chip 및 wire를 감싸서 보호하는 공정</p>
+						</div>
+					</li>
+				</div>
+				<div class="aos-item" data-aos="fade-down">
+					<li class="process_detail_list">
+						<div class="process_detail_media_wrapper">
+							<iframe class="media_i" src="https://www.youtube.com/embed/BrnDa5zWJfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="process_detail_txt_wrapper">
+							<span class="process_num">05</span>
+							<h3 class="process_title">TRIM / FORM</h3>
+							<p class="prodTxt1">L/F의 불필요한 부분을 절단하고 낱개의 상태로 분리하는 공정</p>
+						</div>
+					</li>
+				</div>
+				<div class="aos-item" data-aos="fade-down">
+					<li class="process_detail_list">
+						<div class="process_detail_media_wrapper">
+							<iframe class="media_i" src="https://www.youtube.com/embed/TElyZ5QZPhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="process_detail_txt_wrapper">
+							<span class="process_num">06</span>
+							<h3 class="process_title">Test & Marking</h3>
+							<p class="prodTxt1">PKG 상태에서 전기적 특성 검사후 양,불을 선별하는 공정</p>
+						</div>
+					</li>
+				</div>
+			</ul>
+		</div>
+	</div>
+
+</section>
+<!--/본문 영역-->
+
+<!--푸터 영역-->
+<footer>
+	<div class="footer_wrapper">
+		<ul>
+			<li>
+				<a href="#">개인정보보호방침</a>
+			</li>
+			<li>
+				<a href="Discretes">제품소개</a>
+			</li>
+			<li>
+				<a href="사업장소개">사업장안내</a>
+			</li>
+		</ul>
+		<div class="footer_info">
+			<p class="footer_info_회사명">(주)에스피반도체통신</p>
+			<p class="footer_info_대표이사">대표이사 윤수열</p>
+			<p class="footer_info_주소">경기도 부천시 원미구 평천로 832번길 30(도당동)&nbsp;&nbsp;&nbsp;&nbsp;<span>TEL: 032-680-7777</span></p>
+			<p class="footer_info_copyright">COPYRIGHT (C) SPSEMICONDUCTOR & COMMUNICATION.  ALL RIGHTS RESERVED.</p>
+		</div>
+	</div>
+</footer>
+<!--/푸터 영역-->
+
+<!--모달영역-->
+<div class="modal-wrapper">
+    <div class="content">
+		<img src="" id="modal_img">
+    </div>
+</div>
+<!--/모달영역-->
+</body>
+</html>

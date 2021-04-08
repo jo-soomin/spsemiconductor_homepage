@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>인증사항</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Service/Certification.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/background.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/location.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/footer.css' %}">
+	<script type="text/javascript" src="{% static 'js/Service/Certification.js' %}"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--메뉴 영역-->
+<div id ="menu">
+			<!--	메인메뉴 logo 영역	-->
+			<div id="main_logo_wrapper">
+				<a href="/"><img src="{% static 'img/white_logo.png' %}" id="main_logo"></a>
+			</div>
+			<!--	메인메뉴 title 영역	-->
+			<div id="main_title_wrapper">
+				<ul>
+					<li class="main_li">
+						<a class="main_title" href="ceo인사말">About us</a>
+						<ul class="sub">
+							<li><a href="ceo인사말" class=sub-title>ceo 인사말</a></li>
+							<li><a href="주요연혁" class=sub-title>주요 연혁</a></li>
+							<li><a href="글로벌파트너" class=sub-title>글로벌파트너</a></li>
+							<li><a href="사업장소개" class=sub-title>사업장 소개</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="Discretes">Products</a>
+						<ul class="sub">
+							<li><a href="Discretes" class="sub-title">Discretes</a></li>
+							<li><a href="Modules" class="sub-title">Modules</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="품질경영">Service</a>
+						<ul class="sub">
+							<li><a href="품질경영" class="sub-title">품질경영</a></li>
+							<li><a href="Certification" class="sub-title">인증사항</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="공지사항">Supports & Contacts</a>
+						<ul class="sub">
+							<li><a href="공지사항" class="sub-title">공지사항</a></li>
+							<li><a href="문의사항" class="sub-title">문의사항</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		<!--	/메인메뉴 title 영역	-->
+			<!--	모바일 메뉴바		-->
+            <div class="mobile_nav_wrapper">
+                <nav class="mobile-nav-wrap" role="navigation">
+                    <ul class="mobile-header-nav">
+					  <li class="mobile-header-nav-main-li">
+						  <a href="ceo인사말" class="mobile-header-nav-main-title">About us</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="ceo인사말" class="sub-title">ceo 인사말</a>
+								  <a href="주요연혁" class="sub-title">주요 연혁</a>
+								  <a href="글로벌파트너" class="sub-title">글로벌파트너</a>
+								  <a href="사업장소개" class="sub-title">사업장 소개</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="#" class="mobile-header-nav-main-title">Products</a>
+						   <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="Discretes" class="sub-title">Discretes</a>
+								  <a href="Modules" class="sub-title">Modules</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="품질경영" class="mobile-header-nav-main-title">Service</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="품질경영" class="sub-title">품질경영</a>
+								  <a href="Certification" class="sub-title">인증사항</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="공지사항" class="mobile-header-nav-main-title">Supports & Contacts</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="공지사항" class="sub-title">공지사항</a>
+								  <a href="문의사항" class="sub-title">문의사항</a>
+							  </li>
+						  </ul>
+					  </li>
+					</ul>
+                </nav>
+                <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+                    <span class="menu-item"></span>
+					<span class="menu-item"></span>
+					<span class="menu-item"></span>
+                </a>
+            </div>
+            <!--/모바일 메뉴바-->
+	</div>
+<!--/메뉴 영역-->
+<!--본문 영역-->
+<section class="section01">
+    <div class="bg_img">
+		<div class="bg_text_wrapper">
+			<p class="bg_text_eng">SP semiconductor Co., Ltd.</p>
+			<p class="bg_text_kor">Global 전력반도체 기업</p>
+		</div>
+	</div>
+	<div class="location">
+		<ul>
+			<li><img src="{% static 'img/공통_img/home_icon.png'%}"></li>
+			<li><img src="{% static 'img/공통_img/arrow.png'%}"></li>
+			<li><span>Service</span></li>
+			<li><img src="{% static 'img/공통_img/arrow.png'%}"></li>
+			<li><span>인증사항</span></li>
+		</ul>
+	</div>
+</section>
+<section class="section02">
+	<h2><img src="{% static 'img/item.png'%}"> CERTIFICATION</h2>
+	<div class="certification_wrapper">
+		<ul>
+			<li class="certification_li">
+				<img class="certification_img" src="{% static 'img/Service/인증사항/중소기업확인서.jpg'%}" ondragstart="return false" id="중소기업확인서">
+				<span class="certification_title">Inno-Biz</span>
+				<div class="date">2018.06</div>
+			</li>
+			<li class="certification_li">
+				<img class="certification_img" src="{% static 'img/Service/인증사항/AEO.jpg'%}" ondragstart="return false" id="AEO">
+				<span class="certification_title">AEO</span>
+				<div class="date">2018.10</div>
+			</li>
+			<li class="certification_li">
+				<img class="certification_img" src="{% static 'img/Service/인증사항/ISO 14001.jpg'%}" ondragstart="return false" id="ISO 14001">
+				<span class="certification_title">ISO 14001</span>
+				<div class="date">2019.11</div>
+			</li>
+			<li class="certification_li">
+				<img class="certification_img" src="{% static 'img/Service/인증사항/뿌리기업.jpg'%}" ondragstart="return false" id="뿌리기업">
+				<span class="certification_title">Root enterprise</span>
+				<div class="date">2020.03</div>
+			</li>
+			<li class="certification_li">
+				<img class="certification_img" src="{% static 'img/Service/인증사항/ISO 9001.jpg'%}" ondragstart="return false" id="ISO 9001_본사_안산">
+				<span class="certification_title">ISO 9001</span>
+				<div class="date">2020.10</div>
+			</li>
+			<li class="certification_li">
+				<img class="certification_img" src="{% static 'img/Service/인증사항/IATF 16949.jpg'%}" ondragstart="return false" id="IATF 16949_본사_안산">
+				<span class="certification_title">IATF 16949</span>
+				<div class="date">2020.10</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<hr>
+<section class="section03">
+	<h2><img src="{% static 'img/item.png'%}"> Patent</h2>
+	<div class="patent_wrapper">
+		<ul>
+			<li class="patent_li">
+				<img class="patent_img" src="{% static 'img/Service/인증사항/웨이퍼 맵 잉킹 장치.jpg'%}" ondragstart="return false" id="웨이퍼 맵 잉킹 장치">
+				<span class="patent_title">Wafer inking</span>
+				<div class="date">2014.01</div>
+			</li>
+			<li class="patent_li">
+				<img class="patent_img" src="{% static 'img/Service/인증사항/솔더 커팅 장치.jpg'%}" ondragstart="return false" id="솔더 커팅 장치">
+				<span class="patent_title">Solder cutting</span>
+				<div class="date">2018.03</div>
+			</li>
+			<li class="patent_li">
+				<img class="patent_img" src="{% static 'img/Service/인증사항/반도체용 와이어 본딩 공구.jpg'%}" ondragstart="return false" id="반도체용 와이어 본딩 공구">
+				<span class="patent_title">WB tool</span>
+				<div class="date">2019.04</div>
+			</li>
+			<li class="patent_li">
+				<img class="patent_img" src="{% static 'img/Service/인증사항/웨이퍼용 림부 제거장치.jpg'%}" ondragstart="return false" id="웨이퍼용 림부 제거장치">
+				<span class="patent_title">Rim removing</span>
+				<div class="date">2020.01</div>
+			</li>
+			<li class="patent_li">
+				<img class="patent_img" src="{% static 'img/Service/인증사항/반도체 와이어 본딩용 기판 고정 클램프.jpg'%}" ondragstart="return false" id="반도체 와이어 본딩용 기판 고정 클램프">
+				<span class="patent_title">Substrate fixing</span>
+				<div class="date">2020.06</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<!--/본문 영역-->
+
+<!--푸터 영역-->
+<footer>
+	<div class="footer_wrapper">
+		<ul>
+			<li>
+				<a href="#">개인정보보호방침</a>
+			</li>
+			<li>
+				<a href="Discretes">제품소개</a>
+			</li>
+			<li>
+				<a href="사업장소개">사업장안내</a>
+			</li>
+		</ul>
+		<div class="footer_info">
+			<p class="footer_info_회사명">(주)에스피반도체통신</p>
+			<p class="footer_info_대표이사">대표이사 윤수열</p>
+			<p class="footer_info_주소">경기도 부천시 원미구 평천로 832번길 30(도당동)&nbsp;&nbsp;&nbsp;&nbsp;<span>TEL: 032-680-7777</span></p>
+			<p class="footer_info_copyright">COPYRIGHT (C) SPSEMICONDUCTOR & COMMUNICATION.  ALL RIGHTS RESERVED.</p>
+		</div>
+	</div>
+</footer>
+<!--/푸터 영역-->
+
+<!--모달영역-->
+<div class="modal-wrapper">
+    <div class="content">
+		<img src="" id="modal_img">
+    </div>
+</div>
+<!--/모달영역-->
+</body>
+</html>

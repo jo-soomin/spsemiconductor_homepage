@@ -1,0 +1,618 @@
+@media ( min-width: 1024px ) {
+/*  -------------------------------------- 공통 css ------------------------------------------------ */
+html, body {
+    position: relative;
+    height: 100%;
+    font-size:14px;
+}
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+#menu{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color:rgba(20, 29, 37, 0.8);
+    z-index:2000;
+}
+#main_logo_wrapper{
+   width:20%;
+   height:100px;
+   float:left;
+   text-align: center;
+   padding-top:20px;
+}
+#main_logo{
+    width:100px;
+    height:60px;
+    object-fit:contain;
+    margin-right:30%;
+}
+#main_title_wrapper > ul > li > a{
+    line-height: 100px;
+    font-weight:600;
+    font-size:15px;
+}
+#main_title_wrapper{
+    width: 60%;
+    float: left;
+}
+#main_title_wrapper > ul > li{
+    list-style: none;
+    width:25%;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+}
+#main_title_wrapper > ul > li > ul > li{
+    list-style: none;
+    font-size: 13px;
+    line-height: 30px;
+    padding-top:1%;
+}
+.main_title{
+    text-decoration: none;
+    mouse-pointer: cursor;
+    color:white;
+}
+.sub-title{
+    text-decoration: none;
+    mouse-pointer: cursor;
+    color:white;
+}
+.sub{
+    color:white;
+    background-color:rgba(20, 29, 37, 0.8);
+    display:none;
+}
+.mobile_nav_wrapper{
+    display:none;
+}
+/* ----------------------------------------------- /공통 css -------------------------------------------------------*/
+.section01{
+    width:100%;
+    height:auto;
+}
+.sub_sub_btn_wrapper ul{
+    width:100%;
+    max-width:1200px;
+    height:60px;
+    margin: 0 auto;
+    line-height:3;
+    list-style:none;
+    border-bottom:1px solid #e5e5e5;
+}
+.sub_sub_btn_wrapper ul li{
+    width:50%;
+    height:60px;
+    float:left;
+    text-align:center;
+}
+.sub_sub_btn_wrapper ul li:hover{
+    border-bottom:1px solid black;
+}
+.sub_sub_btn_wrapper ul li a{
+    text-decoration:none;
+    color:grey;
+    font-size:20px;
+    font-weight:600;
+}
+#공정도{
+    border-bottom:1px solid black;
+}
+#공정도 a{
+    color:black;
+}
+.section02{
+    width: 80%;
+    max-width:1200px;
+    height: auto;
+    margin: 30px auto;
+}
+.title_wrapper{
+    height:auto;
+}
+.section03{
+    width: 80%;
+    max-width: 1200px;
+    height:auto;
+    margin: 0 auto;
+}
+#under_line{
+    width:100%;
+    margin-top:1%;
+}
+.공정도_wrapper{
+    height:400px;
+    text-align:center;
+    margin-top:1%;
+    display:flex;
+}
+.swiper-container {
+     width: 60%;
+     height: 100%;
+}
+.swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: #fff;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+}
+.main_slide_img{
+    width:100%;
+    height:90%;
+    object-fit: contain;
+}
+#pagination{
+    margin-top:390px;
+}
+.sub-slide-info-container{
+    width: 40%;
+    height: 400px;
+}
+.sub-slide-info-wrapper{
+    margin-bottom:5%;
+    display: inline-grid;
+}
+.sub-slide-info-img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+.sub-slide-arrow-wrapper{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: space-around;
+}
+.next_btn{
+    cursor:pointer;
+}
+.prev_btn{
+    cursor:pointer;
+}
+.section04{
+    width: 80%;
+    max-width:1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.process_detail_wrapper{
+    width:100%;
+    height:auto;
+}
+.media_i{
+    width:100%;
+    height:30vh;
+}
+.prodTxt1{
+    word-break: keep-all;
+}
+h1{
+    font-size:2.825rem;
+}
+
+.process_detail_ul{
+    list-style:none;
+}
+.process_detail_list{
+    width:100%;
+    height: auto;
+    margin-top: 20px;
+    display:flex;
+    justify-content:space-between;
+}
+.process_detail_media_wrapper{
+    width:40%;
+    height:auto;
+}
+.process_detail_media{
+    width:100%;
+    height:100%;
+}
+.process_detail_txt_wrapper{
+    width:50%;
+    height:auto;
+}
+.process_num{
+    display: block;
+    color: #bfbfbf;
+    font-size: 2.941em;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: -10px 0 27px;
+}
+.process_title{
+    display: block;
+    color: #333;
+    font-size: 1.529em;
+    line-height: 1.1;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 0 0 27px;
+    margin: 0 0 20px;
+    font-weight: 600;
+}
+
+/* 모달 css */
+.modal-wrapper{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0; left:0;
+  background:rgba(0,0,0,0.8);
+  visibility:hidden;
+  opacity:0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  z-index:3000;
+}
+
+#modal_img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 60%;
+    height: 80vh;
+    margin-left:20%;
+    margin-top:10vh;
+    object-fit : contain;
+}
+/* 상세공정도 fade in */
+.aos-item {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+
+}
+
+/* 모바일 */
+@media ( max-width: 1023px ) {
+/* --------------------------------------- 공통 css -------------------------------------------- */
+html, body {
+    position: relative;
+    height: 100%;
+}
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+#menu{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color:rgba(20, 29, 37, 0.8);
+    z-index:2000;
+}
+#main_logo_wrapper{
+   width:20%;
+   height:100px;
+   float:left;
+   text-align: center;
+   padding-top:20px;
+   margin-left:1%;
+}
+#main_logo{
+    width:100px;
+    height:60px;
+    object-fit:contain;
+}
+#main_title_wrapper > ul > li > a{
+    line-height: 100px;
+}
+#main_title_wrapper{
+    width: 60%;
+    float: left;
+    display:none;
+}
+#main_title_wrapper > ul > li{
+    list-style: none;
+    width:25%;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+}
+#main_title_wrapper > ul > li > ul > li{
+    list-style: none;
+    font-size: 11px;
+    line-height: 30px;
+}
+.main_title{
+    text-decoration: none;
+    mouse-pointer: cursor;
+    color:white;
+}
+.sub-title{
+    text-decoration: none;
+    mouse-pointer: cursor;
+    color:white;
+}
+.sub{
+    color:white;
+    background-color:rgba(20, 29, 37, 0.8);
+    display:none;
+}
+.mobile_nav_wrapper {
+    text-align:right;
+}
+.mobile-nav-wrap {
+    /* display: none; */
+}
+.mobile-header-nav {
+  background-color:rgba(20, 29, 37, 0.8);
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100px;
+  left:0;
+  width: 100%;
+}
+.mobile-header-nav li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.mobile-header-nav li a {
+  color: white;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-header-nav-sub{
+    display:none;
+}
+
+.hamburger-menu {
+  display: inline-block;
+  height: 100px;
+  padding: 35px 25px;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger-menu:hover {
+  cursor: pointer;
+}
+.hamburger-menu .menu-item {
+  background: white;
+  display: block;
+  height: 3px;
+  margin: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+  width: 40px;
+}
+.hamburger-menu.open .menu-item {
+  margin: 0 0 5px;
+}
+.hamburger-menu.open .menu-item:first-child {
+  transform: rotate(45deg);
+  transform-origin: 10px;
+}
+.hamburger-menu.open .menu-item:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-menu.open .menu-item:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: 8px;
+}
+/* --------------------------------------- /공통 css -------------------------------------------- */
+
+.section01{
+    width:100%;
+    height:auto;
+}
+.sub_sub_btn_wrapper ul{
+    width:100%;
+    max-width:1200px;
+    height:60px;
+    margin: 0 auto;
+    line-height:3;
+    list-style:none;
+    border-bottom:1px solid #e5e5e5;
+}
+.sub_sub_btn_wrapper ul li{
+    width:50%;
+    height:60px;
+    float:left;
+    text-align:center;
+}
+.sub_sub_btn_wrapper ul li:hover{
+    border-bottom:1px solid black;
+}
+.sub_sub_btn_wrapper ul li a{
+    text-decoration:none;
+    color:grey;
+    font-size:20px;
+    font-weight:600;
+}
+#공정도{
+    border-bottom:1px solid black;
+}
+#공정도 a{
+    color:black;
+}
+.section02{
+    width: 80%;
+    max-width:1200px;
+    height: auto;
+    margin: 30px auto;
+}
+.title_wrapper{
+    height:auto;
+}
+.section03{
+    width: 90%;
+    max-width: 1200px;
+    height:auto;
+    margin: 0 auto;
+}
+#under_line{
+    width:100%;
+    margin-top:1%;
+}
+.공정도_wrapper{
+    width: 100%;
+    height:300px;
+    text-align:center;
+    margin-top:1%;
+    display:flex;
+}
+.swiper-container {
+     width: 100%;
+     height: 100%;
+}
+.swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: #fff;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+}
+.main_slide_img{
+    width:100%;
+    height:90%;
+    object-fit: contain;
+}
+#pagination{
+    margin-top:290px;
+}
+.sub-slide-info-container{
+    width: 40%;
+    height: 400px;
+    display:none;
+}
+.sub-slide-info-wrapper{
+    margin-bottom:5%;
+}
+.sub-slide-info-img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+.sub-slide-arrow-wrapper{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: space-around;
+}
+.section04{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.process_detail_wrapper{
+    width:100%;
+    height:auto;
+}
+.media_i{
+    width:100%;
+    height:40vh;
+}
+h1{
+    font-size:2rem;
+}
+
+.process_detail_ul{
+    list-style:none;
+}
+.process_detail_list{
+    width:100%;
+    height: auto;
+    margin-top: 20px;
+}
+.process_detail_media_wrapper{
+    width:100%;
+    height:auto;
+}
+.process_detail_media{
+    width:100%;
+    height:100%;
+}
+.process_detail_txt_wrapper{
+    width:100%;
+    height:auto;
+    margin-top:30px;
+}
+.process_num{
+    display: block;
+    color: #bfbfbf;
+    font-size: 2em;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: -10px 0 27px;
+}
+.process_title{
+    display: block;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.1;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 0 0 27px;
+    margin: 0 0 20px;
+    font-weight: 600;
+}height:auto;
+}
+/* 모달 css */
+.modal-wrapper{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0; left:0;
+  background:rgba(0,0,0,0.75);
+  visibility:hidden;
+  opacity:0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  z-index:3000;
+}
+
+#modal_img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    margin-top:10vh;
+    object-fit : contain;
+}
+
+/* 상세공정도 fade in */
+.aos-item {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+}

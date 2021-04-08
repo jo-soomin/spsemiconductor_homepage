@@ -1,0 +1,423 @@
+@media ( min-width: 1024px ) {
+/*  -------------------------------------- 공통 css ------------------------------------------------ */
+html, body {
+    position: relative;
+    height: 100%;
+    font-size:14px;
+}
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+#menu{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color:rgba(20, 29, 37, 0.8);
+    z-index:2000;
+}
+#main_logo_wrapper{
+   width:20%;
+   height:100px;
+   float:left;
+   text-align: center;
+   padding-top:20px;
+}
+#main_logo{
+    width:100px;
+    height:60px;
+    object-fit:contain;
+    margin-right:30%;
+}
+#main_title_wrapper > ul > li > a{
+    line-height: 100px;
+    font-weight:600;
+    font-size:15px;
+}
+#main_title_wrapper{
+    width: 60%;
+    float: left;
+}
+#main_title_wrapper > ul > li{
+    list-style: none;
+    width:25%;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+}
+#main_title_wrapper > ul > li > ul > li{
+    list-style: none;
+    font-size: 13px;
+    line-height: 30px;
+    padding-top:1%;
+}
+.main_title{
+    text-decoration: none;
+    mouse-pointer: cursor;
+    color:white;
+}
+.sub-title{
+    text-decoration: none;
+    mouse-pointer: cursor;
+    color:white;
+}
+.sub{
+    color:white;
+    background-color:rgba(20, 29, 37, 0.8);
+    display:none;
+}
+.mobile_nav_wrapper{
+    display:none;
+}
+/* ----------------------------------------------- /공통 css -------------------------------------------------------*/
+.section01{
+    width:100%;
+    height:auto;
+}
+.sub_sub_btn_wrapper ul{
+    width:100%;
+    max-width:1200px;
+    height:60px;
+    margin: 0 auto;
+    line-height:3;
+    list-style:none;
+    border-bottom:1px solid #e5e5e5;
+}
+.sub_sub_btn_wrapper ul li{
+    width:50%;
+    height:60px;
+    float:left;
+    text-align:center;
+}
+.sub_sub_btn_wrapper ul li:hover{
+    border-bottom:1px solid black;
+}
+.sub_sub_btn_wrapper ul li a{
+    text-decoration:none;
+    color:grey;
+    font-size:20px;
+    font-weight:600;
+}
+#Discretes{
+    border-bottom:1px solid black;
+}
+#Discretes a{
+    color:black;
+}
+.section02{
+    width: 80%;
+    max-width:1200px;
+    height: auto;
+    margin: 30px auto;
+}
+.title_wrapper{
+    height:auto;
+}
+.product_wrapper{
+    width:100%;
+    height:auto;
+}
+.product_wrapper ul{
+    width:100%;
+    height:1250px;
+}
+.product_li{
+    width: calc( 25% - 11.25px );
+    height:auto;
+    float:left;
+    text-align:center;
+    list-style: none;
+    outline: 1px solid #e5e5e5;
+    margin-top: 30px;
+    margin-right: 5px;
+}
+.product_li:hover{
+    outline: 1px solid #1975ff;
+    transition: opacity 0.3s;
+    cursor:pointer;
+}
+.product_img{
+    margin-top:2%;
+    width:100%;
+    height:180px;
+}
+.product_title{
+    font-weight:700;
+    font-size:20px;
+}
+.tag_list{
+    overflow: hidden;
+    width: calc( 100% - 40px );
+    margin: 0 auto;
+    padding: 16.5px 0;
+    border-top: 1px solid #e5e5e5;
+    color: #808080;
+    letter-spacing: -0.5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    vertical-align: top;
+}
+
+/* 모달 css */
+.modal-wrapper{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0; left:0;
+  background:rgba(0,0,0,0.8);
+  visibility:hidden;
+  opacity:0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  z-index:3000;
+}
+
+#modal_img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 60%;
+    height: 80vh;
+    margin-left:20%;
+    margin-top:10vh;
+    object-fit : contain;
+}
+
+}
+
+/* 모바일 */
+@media ( max-width: 1023px ) {
+/* --------------------------------------- 공통 css -------------------------------------------- */
+html, body {
+    position: relative;
+    height: 100%;
+}
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+#menu{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color:rgba(20, 29, 37, 0.8);
+    z-index:2000;
+}
+#main_logo_wrapper{
+   width:20%;
+   height:100px;
+   float:left;
+   text-align: center;
+   padding-top:20px;
+   margin-left:1%;
+}
+#main_logo{
+    width:100px;
+    height:60px;
+    object-fit:contain;
+}
+#main_title_wrapper > ul > li > a{
+    line-height: 100px;
+}
+#main_title_wrapper{
+    width: 60%;
+    float: left;
+    display:none;
+}
+#main_title_wrapper > ul > li{
+    list-style: none;
+    width:25%;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+}
+#main_title_wrapper > ul > li > ul > li{
+    list-style: none;
+    font-size: 11px;
+    line-height: 30px;
+}
+.main_title{
+    text-decoration: none;
+    mouse-pointer: cursor;
+    color:white;
+}
+.sub-title{
+    text-decoration: none;
+    mouse-pointer: cursor;
+    color:white;
+}
+.sub{
+    color:white;
+    background-color:rgba(20, 29, 37, 0.8);
+    display:none;
+}
+.mobile_nav_wrapper {
+    text-align:right;
+}
+.mobile-nav-wrap {
+    /* display: none; */
+}
+.mobile-header-nav {
+  background-color:rgba(20, 29, 37, 0.8);
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100px;
+  left:0;
+  width: 100%;
+}
+.mobile-header-nav li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.mobile-header-nav li a {
+  color: white;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-header-nav-sub{
+    display:none;
+}
+
+.hamburger-menu {
+  display: inline-block;
+  height: 100px;
+  padding: 35px 25px;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger-menu:hover {
+  cursor: pointer;
+}
+.hamburger-menu .menu-item {
+  background: white;
+  display: block;
+  height: 3px;
+  margin: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+  width: 40px;
+}
+.hamburger-menu.open .menu-item {
+  margin: 0 0 5px;
+}
+.hamburger-menu.open .menu-item:first-child {
+  transform: rotate(45deg);
+  transform-origin: 10px;
+}
+.hamburger-menu.open .menu-item:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-menu.open .menu-item:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: 8px;
+}
+/* --------------------------------------- /공통 css -------------------------------------------- */
+
+.section01{
+    width:100%;
+    height:auto;
+}
+.sub_sub_btn_wrapper ul{
+    width:100%;
+    max-width:1200px;
+    height:60px;
+    margin: 0 auto;
+    line-height:3;
+    list-style:none;
+    border-bottom:1px solid #e5e5e5;
+}
+.sub_sub_btn_wrapper ul li{
+    width:50%;
+    height:60px;
+    float:left;
+    text-align:center;
+}
+.sub_sub_btn_wrapper ul li:hover{
+    border-bottom:1px solid black;
+}
+.sub_sub_btn_wrapper ul li a{
+    text-decoration:none;
+    color:grey;
+    font-size:20px;
+    font-weight:600;
+}
+#Discretes{
+    border-bottom:1px solid black;
+}
+#Discretes a{
+    color:black;
+}
+.title_wrapper{
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+}
+.product_li{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    outline: 1px solid #e5e5e5;
+    margin-top: 30px;
+    margin-right: 5px;
+    text-align:center;
+}
+.product_img{
+    width: 100%;
+    height:auto;
+    marin-top:2%;
+}
+.product_title{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.tag_list{
+    overflow: hidden;
+    width: calc( 100% - 40px );
+    margin: 0 auto;
+    padding: 16.5px 0;
+    border-top: 1px solid #e5e5e5;
+    color: #808080;
+    letter-spacing: -0.5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    vertical-align: top;
+}
+
+
+/* 모달 css */
+.modal-wrapper{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0; left:0;
+  background:rgba(0,0,0,0.75);
+  visibility:hidden;
+  opacity:0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  z-index:3000;
+}
+
+#modal_img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    margin-top:10vh;
+    object-fit : contain;
+}
+
+}

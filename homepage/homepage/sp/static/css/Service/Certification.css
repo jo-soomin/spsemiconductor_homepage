@@ -1,0 +1,488 @@
+@media ( min-width: 1024px ) {
+/*  -------------------------------------- 공통 css ------------------------------------------------ */
+html, body {
+    position: relative;
+    width:100%;
+    height: auto;
+    font-size:14px;
+}
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+#menu{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color:rgba(20, 29, 37, 0.8);
+    z-index:2000;
+}
+#main_logo_wrapper{
+   width:20%;
+   height:100px;
+   float:left;
+   text-align: center;
+   padding-top:20px;
+}
+#main_logo{
+    width:100px;
+    height:60px;
+    object-fit:contain;
+    margin-right:30%;
+}
+#main_title_wrapper > ul > li > a{
+    line-height: 100px;
+    font-weight:600;
+    font-size:15px;
+}
+#main_title_wrapper{
+    width: 60%;
+    float: left;
+}
+#main_title_wrapper > ul > li{
+    list-style: none;
+    width:25%;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+}
+#main_title_wrapper > ul > li > ul > li{
+    list-style: none;
+    font-size: 13px;
+    line-height: 30px;
+    padding-top:1%;
+}
+.main_title{
+    text-decoration: none;
+    mouse-pointer: cursor;
+    color:white;
+}
+.sub-title{
+    text-decoration: none;
+    mouse-pointer: cursor;
+    color:white;
+}
+.sub{
+    color:white;
+    background-color:rgba(20, 29, 37, 0.8);
+    display:none;
+}
+
+#footer{
+   width:100%;
+   height:100px;
+   bottom:0;
+   color: white;
+   background-color:#222;
+   margin-top:10%;
+}
+#footer #footer_info{
+    width: 100%;
+    max-width: 1200px;
+    padding: 22px 0;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+.mobile_nav_wrapper{
+    display:none;
+}
+/* ----------------------------------------------- /공통 css -------------------------------------------------------*/
+.section01{
+    width:100%;
+    height:auto;
+}
+.section02{
+    width: 80%;
+    max-width:1200px;
+    height: auto;
+    margin: 30px auto;
+}
+.section02 h2{
+    font-size:38px;
+    text-align:center;
+    font-weight:400;
+}
+.section02 h2 img{
+    width:20px;
+}
+.certification_wrapper{
+    width:100%;
+    height:auto;
+}
+.certification_wrapper ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.certification_li{
+    width: calc( 25% - 11.25px );
+    height:auto;
+    text-align:center;
+    list-style: none;
+    border: 1px solid #e5e5e5;
+    margin-top: 30px;
+    margin-right: 8px;
+    display: inline-table;
+}
+.certification_li:hover{
+    border: 1px solid #1975ff;
+    transition: opacity 0.3s;
+    cursor:pointer;
+}
+.certification_img{
+    width:100%;
+    height:100%;
+}
+.certification_title{
+    font-weight:700;
+    font-size:20px;
+}
+hr{
+    width:80%;
+    max-width:1200px;
+    margin: 10px auto;
+    border:1px solid #e5e5e5;
+}
+.section03{
+    width: 80%;
+    max-width:1200px;
+    height: auto;
+    margin: 20px auto;
+}
+.section03 h2{
+    font-size:38px;
+    text-align:center;
+    font-weight:400;
+}
+.section03 h2 img{
+    width:20px;
+}
+.patent_wrapper{
+    width:100%;
+    height:auto;
+}
+.patent_wrapper ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.patent_li{
+    width: calc( 25% - 11.25px );
+    height:auto;
+    text-align:center;
+    list-style: none;
+    border: 1px solid #e5e5e5;
+    margin-top: 30px;
+    margin-right: 5px;
+    display: inline-table;
+}
+.patent_li:hover{
+    border: 1px solid #1975ff;
+    transition: opacity 0.3s;
+    cursor:pointer;
+}
+.patent_img{
+    width:100%;
+    height:100%;
+}
+.patent_title{
+    font-weight:700;
+    font-size:20px;
+}
+.date{
+    overflow: hidden;
+    width: calc( 100% - 40px );
+    margin: 0 auto;
+    padding: 16.5px 0;
+    border-top: 1px solid #e5e5e5;
+    color: #808080;
+    letter-spacing: -0.5px;
+}
+
+/* 모달 css */
+.modal-wrapper{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0; left:0;
+  background:rgba(0,0,0,0.8);
+  visibility:hidden;
+  opacity:0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  z-index:3000;
+}
+
+#modal_img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 70%;
+    height: 90vh;
+    margin-left:15%;
+    margin-top:5vh;
+    object-fit : contain;
+}
+
+}
+
+/* 모바일 */
+@media ( max-width: 1023px ) {
+/* --------------------------------------- 공통 css -------------------------------------------- */
+html, body {
+    position: relative;
+    height: 100%;
+}
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+#menu{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color:rgba(20, 29, 37, 0.8);
+    z-index:2000;
+}
+#main_logo_wrapper{
+   width:20%;
+   height:100px;
+   float:left;
+   text-align: center;
+   padding-top:20px;
+   margin-left:1%;
+}
+#main_logo{
+    width:100px;
+    height:60px;
+    object-fit:contain;
+}
+#main_title_wrapper > ul > li > a{
+    line-height: 100px;
+}
+#main_title_wrapper{
+    width: 60%;
+    float: left;
+    display:none;
+}
+#main_title_wrapper > ul > li{
+    list-style: none;
+    width:25%;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+}
+#main_title_wrapper > ul > li > ul > li{
+    list-style: none;
+    font-size: 11px;
+    line-height: 30px;
+}
+.main_title{
+    text-decoration: none;
+    mouse-pointer: cursor;
+    color:white;
+}
+.sub-title{
+    text-decoration: none;
+    mouse-pointer: cursor;
+    color:white;
+}
+.sub{
+    color:white;
+    background-color:rgba(20, 29, 37, 0.8);
+    display:none;
+}
+.mobile_nav_wrapper {
+    text-align:right;
+}
+.mobile-nav-wrap {
+    /* display: none; */
+}
+.mobile-header-nav {
+  background-color:rgba(20, 29, 37, 0.8);
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100px;
+  left:0;
+  width: 100%;
+}
+.mobile-header-nav li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.mobile-header-nav li a {
+  color: white;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-header-nav-sub{
+    display:none;
+}
+
+.hamburger-menu {
+  display: inline-block;
+  height: 100px;
+  padding: 35px 25px;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger-menu:hover {
+  cursor: pointer;
+}
+.hamburger-menu .menu-item {
+  background: white;
+  display: block;
+  height: 3px;
+  margin: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+  width: 40px;
+}
+.hamburger-menu.open .menu-item {
+  margin: 0 0 5px;
+}
+.hamburger-menu.open .menu-item:first-child {
+  transform: rotate(45deg);
+  transform-origin: 10px;
+}
+.hamburger-menu.open .menu-item:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-menu.open .menu-item:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: 8px;
+}
+
+/* 푸터 */
+#footer{
+   width:100%;
+   height:100px;
+   bottom:0;
+   color: white;
+   background-color:#222;
+   margin-top:5%;
+}
+#footer #footer_info{
+    width: 100%;
+    max-width: 1200px;
+    padding: 22px 0;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 2vw;
+}
+/* --------------------------------------- /공통 css -------------------------------------------- */
+
+.section01{
+    width:100%;
+    height:auto;
+}
+.section02 h2{
+    margin-top: 15px;
+    font-size: 25px;
+    text-align:center;
+}
+.section02 h2 img{
+    width:15px;
+}
+.certification_li{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    outline: 1px solid #e5e5e5;
+    margin-top: 20px;
+    text-align:center;
+}
+.certification_img{
+    width: 100%;
+    height:auto;
+}
+.certification_title{
+    font-weight: 700;
+    font-size: 1rem;
+}
+hr{
+   width:80%;
+   max-width:1200px;
+   border:  #e5e5e5;
+}
+.section03 h2{
+    margin-top: 15px;
+    font-size: 25px;
+    text-align:center;
+}
+.section03 h2 img{
+    width:15px;
+}
+.patent_li{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    outline: 1px solid #e5e5e5;
+    margin-top: 20px;
+    text-align:center;
+}
+.patent_img{
+    width: 100%;
+    height:auto;
+}
+.patent_title{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.date{
+    overflow: hidden;
+    width: calc( 100% - 40px );
+    margin: 0 auto;
+    padding: 16.5px 0;
+    border-top: 1px solid #e5e5e5;
+    color: #808080;
+    letter-spacing: -0.5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    vertical-align: top;
+}
+
+
+/* 모달 css */
+.modal-wrapper{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0; left:0;
+  background:rgba(0,0,0,0.75);
+  visibility:hidden;
+  opacity:0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  z-index:3000;
+}
+
+#modal_img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    margin-top:10vh;
+    object-fit : contain;
+}
+
+
+}

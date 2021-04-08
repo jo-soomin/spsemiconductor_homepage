@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Discretes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Service/Quality.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/location.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/footer.css' %}">
+	<script type="text/javascript" src="{% static 'js/Service/Qual_reli.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/featherlight.min.css' %}">
+	<script type="text/javascript" src="{% static 'js/featherlight.min.js' %}"></script>
+	<script src="//code.jquery.com/jquery-latest.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<!--메뉴 영역-->
+<div id ="menu">
+			<!--	메인메뉴 logo 영역	-->
+			<div id="main_logo_wrapper">
+				<a href="/"><img src="{% static 'img/white_logo.png' %}" id="main_logo"></a>
+			</div>
+			<!--	메인메뉴 title 영역	-->
+			<div id="main_title_wrapper">
+				<ul>
+					<li class="main_li">
+						<a class="main_title" href="ceo인사말">About us</a>
+						<ul class="sub">
+							<li><a href="ceo인사말" class=sub-title>ceo 인사말</a></li>
+							<li><a href="주요연혁" class=sub-title>주요 연혁</a></li>
+							<li><a href="글로벌파트너" class=sub-title>글로벌파트너</a></li>
+							<li><a href="사업장소개" class=sub-title>사업장 소개</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="Discretes">Products</a>
+						<ul class="sub">
+							<li><a href="Discretes" class="sub-title">Discretes</a></li>
+							<li><a href="Modules" class="sub-title">Modules</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="품질승인관리">Service</a>
+						<ul class="sub">
+							<li><a href="품질승인관리" class="sub-title">품질정책</a></li>
+							<li><a href="Certification" class="sub-title">인증사항</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="공지사항">Supports & Contacts</a>
+						<ul class="sub">
+							<li><a href="공지사항" class="sub-title">공지사항</a></li>
+							<li><a href="문의사항" class="sub-title">문의사항</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		<!--	/메인메뉴 title 영역	-->
+			<!--	모바일 메뉴바		-->
+            <div class="mobile_nav_wrapper">
+                <nav class="mobile-nav-wrap" role="navigation">
+                    <ul class="mobile-header-nav">
+					  <li class="mobile-header-nav-main-li">
+						  <a href="ceo인사말" class="mobile-header-nav-main-title">About us</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="ceo인사말" class="sub-title">ceo 인사말</a>
+								  <a href="주요연혁" class="sub-title">주요 연혁</a>
+								  <a href="글로벌파트너" class="sub-title">글로벌파트너</a>
+								  <a href="사업장소개" class="sub-title">사업장 소개</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="Discretes" class="mobile-header-nav-main-title">Products</a>
+						   <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="Discretes" class="sub-title">Discretes</a>
+								  <a href="Modules" class="sub-title">Modules</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="품질승인관리" class="mobile-header-nav-main-title">Service</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="품질승인관리" class="sub-title">품질정책</a>
+								  <a href="Certification" class="sub-title">인증사항</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="문의사항" class="mobile-header-nav-main-title">Supports & Contacts</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="공지사항" class="sub-title">공지사항</a>
+								  <a href="문의사항" class="sub-title">문의사항</a>
+							  </li>
+						  </ul>
+					  </li>
+					</ul>
+                </nav>
+                <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+                    <span class="menu-item"></span>
+					<span class="menu-item"></span>
+					<span class="menu-item"></span>
+                </a>
+            </div>
+            <!--/모바일 메뉴바-->
+	</div>
+<!--/메뉴 영역-->
+<!--본문 영역-->
+<section class="section01">
+    <div class="bg_img"></div>
+	<div class="location">
+		<ul>
+			<li><img src="{% static 'img/공통_img/home_icon.png'%}"></li>
+			<li><img src="{% static 'img/공통_img/arrow.png'%}"></li>
+			<li><span>Service</span></li>
+			<li><img src="{% static 'img/공통_img/arrow.png'%}"></li>
+			<li><span>품질정책</span></li>
+		</ul>
+	</div>
+	 <div class="sub_sub_btn_wrapper">
+        <ul>
+			<li id="품질"><a href="Quality">품질</a></li>
+			<li id="Quality"><a href="Quality">품질정책</a></li>
+            <li id="Qual_reli"><a href="Qual_reli">신뢰성</a></li>
+			<li id="Qual_manage"><a href="Qual_manage">품질경영시스템</a></li>
+			<li id="Qual_ship"><a href="Qual_ship">출하품질보증</a></li>
+        </ul>
+    </div>
+</section>
+<section class="section02">
+	<div class="title_wrapper">
+		<h2>품질정책</h2>
+	</div>
+	<div class="content_wrapper">
+		<div class="content_title_wrapper">
+			<h3>Certification</h3>
+			<span>인증</span>
+		</div>
+		<div class="content_text_wrapper">
+			고객의 요구사항을 만족하기 위하여 효율적인 품질, 환경 경영시스템 및 조직의 구축과
+   			지속적인 품질 개선 활동을 통하여 고객의 요구에 가장 적합한 제품 및 서비스를
+   			고객에게 전달될 수 있도록 모든 임직원이 한마음, 한 뜻으로 노력할 것 입니다.
+		</div>
+	</div>
+	<div class="content_wrapper">
+		<div class="content_title_wrapper">
+			<h3>Guarantee</h3>
+			<span>보증</span>
+		</div>
+		<div class="content_text_wrapper">
+			조립이 완성된 최종제품에 대한 검사업무 기본절차로서 로트의 합격여부를 판정할 수 있도록 하여
+			제품의 품질보증에 만전을 기하고 있습니다.
+		</div>
+	</div>
+	<div class="content_wrapper">
+		<div class="content_title_wrapper">
+			<h3>Acknowledgment</h3>
+			<span>승인</span>
+		</div>
+		<div class="content_text_wrapper">
+			생산되는 제품, 공정, 설비, 원부자재의 초도 품질 및 신규 제품에 대한 품질이 고객 또는 국가규격,
+			단체규격, 법규요구 조건을 만족하는 지 평가를 하여 안정적인 양산 품질수준과 신뢰성 확보하는데 만전을 기하고 있습니다.
+		</div>
+	</div>
+	<div class="content_wrapper">
+		<div class="content_title_wrapper">
+			<h3>Management</h3>
+			<span>관리</span>
+		</div>
+		<div class="content_text_wrapper">
+			생산 중에 발생된 부적합 제품 또는 의심스런 제품이나 공정의 문제 발견 시에 고객에게 문제사항이 출고되지 않도록 억제하고
+			제품 및 공정을 관리하여 동일문제가 재발하지 않도록 관리하고 있습니다.
+		</div>
+	</div>
+	<div class="content_wrapper">
+		<div class="content_title_wrapper">
+			<h3>Reliability</h3>
+			<span>신뢰성</span>
+		</div>
+		<div class="content_text_wrapper">
+			시험 및 분석업무에 대한 운영체계를 확립하여 제품의 신뢰성 향상, 확인, 품질수준 확보를 통해 고객만족을 향상하고 있습니다.
+		</div>
+	</div>
+
+	<!--		<p class="content_title"><img src="{% static 'img/icon/item_check.jpg' %}"> 최종품질보증</p>-->
+<!--		<p class="content_text">-->
+<!--			조립이 완성된 최종제품에 대한 검사업무 기본절차로서 로트의 합격여부를 판정할 수 있도록 하여-->
+<!--			제품의 품질보증에 만전을 기하고 있습니다.-->
+<!--		</p>-->
+<!--		<p class="content_title"><img src="{% static 'img/icon/item_check.jpg' %}"> 품질승인관리</p>-->
+<!--		<p class="content_text">-->
+<!--			생산되는 제품, 공정, 설비, 원부자재의 초도 품질 및 신규 제품에 대한 품질이 고객 또는 국가규격,-->
+<!--			단체규격, 법규요구 조건을 만족하는 지 평가를 하여 안정적인 양산 품질수준과 신뢰성 확보하는데 만전을 기하고 있습니다.-->
+<!--		</p>-->
+<!--		<p class="content_title"><img src="{% static 'img/icon/item_check.jpg' %}"> 부적합품관리</p>-->
+<!--		<p class="content_text">-->
+<!--			생산 중에 발생된 부적합 제품 또는 의심스런 제품이나 공정의 문제 발견 시에 고객에게 문제사항이 출고되지 않도록 억제하고-->
+<!--			제품 및 공정을 관리하여 동일문제가 재발하지 않도록 관리하고 있습니다.-->
+<!--		</p>-->
+<!--		<p class="content_title"><img src="{% static 'img/icon/item_check.jpg' %}"> 신뢰성시험</p>-->
+<!--		<p class="content_text">-->
+<!--			시험 및 분석업무에 대한 운영체계를 확립하여 제품의 신뢰성 향상, 확인, 품질수준 확보를 통해 고객만족을 향상하고 있습니다.-->
+<!--		</p>-->
+</section>
+<!--푸터 영역-->
+<footer>
+	<div class="footer_wrapper">
+		<ul>
+			<li>
+				<a href="#">개인정보보호방침</a>
+			</li>
+			<li>
+				<a href="#">이용약관</a>
+			</li>
+			<li>
+				<a href="사업장소개">사업장안내</a>
+			</li>
+		</ul>
+		<div class="footer_info">
+			<p class="footer_info_회사명">(주)에스피반도체통신</p>
+			<p class="footer_info_대표이사">대표이사 윤수열</p>
+			<p class="footer_info_주소">경기도 부천시 원미구 평천로 832번길 30(도당동)&nbsp;&nbsp;&nbsp;&nbsp;<span>TEL: 032-680-7803</span></p>
+			<p class="footer_info_copyright">COPYRIGHT (C) SPSEMICONDUCTOR & COMMUNICATION.  ALL RIGHTS RESERVED.</p>
+		</div>
+	</div>
+</footer>
+<!--/푸터 영역-->
+<!--/본문 영역-->
+
+</body>
+</html>

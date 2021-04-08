@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>주요 연혁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/About us/주요연혁.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/background.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/location.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/공통/footer.css' %}">
+	<script type="text/javascript" src="{% static 'js/About us/주요연혁.js' %}"></script>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--메뉴 영역-->
+<div id ="menu">
+			<!--	메인메뉴 logo 영역	-->
+			<div id="main_logo_wrapper">
+				<a href="/"><img src="{% static 'img/white_logo.png' %}" id="main_logo"></a>
+			</div>
+			<!--	메인메뉴 title 영역	-->
+			<div id="main_title_wrapper">
+				<ul>
+					<li class="main_li">
+						<a class="main_title" href="ceo인사말">About us</a>
+						<ul class="sub">
+							<li><a href="ceo인사말" class=sub-title>ceo 인사말</a></li>
+							<li><a href="주요연혁" class=sub-title>주요 연혁</a></li>
+							<li><a href="글로벌파트너" class=sub-title>글로벌파트너</a></li>
+							<li><a href="사업장소개" class=sub-title>사업장 소개</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="Discretes">Products</a>
+						<ul class="sub">
+							<li><a href="Discretes" class="sub-title">Discretes</a></li>
+							<li><a href="Modules" class="sub-title">Modules</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="품질경영">Service</a>
+						<ul class="sub">
+							<li><a href="품질경영" class="sub-title">품질경영</a></li>
+							<li><a href="Certification" class="sub-title">인증사항</a></li>
+						</ul>
+					</li>
+					<li class="main_li">
+						<a class="main_title" href="공지사항">Supports & Contacts</a>
+						<ul class="sub">
+							<li><a href="공지사항" class="sub-title">공지사항</a></li>
+							<li><a href="문의사항" class="sub-title">문의사항</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		<!--	/메인메뉴 title 영역	-->
+			<!--	모바일 메뉴바		-->
+            <div class="mobile_nav_wrapper">
+                <nav class="mobile-nav-wrap" role="navigation">
+                    <ul class="mobile-header-nav">
+					  <li class="mobile-header-nav-main-li">
+						  <a href="ceo인사말" class="mobile-header-nav-main-title">About us</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="ceo인사말" class="sub-title">ceo 인사말</a>
+								  <a href="주요연혁" class="sub-title">주요 연혁</a>
+								  <a href="글로벌파트너" class="sub-title">글로벌파트너</a>
+								  <a href="사업장소개" class="sub-title">사업장 소개</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="Discretes" class="mobile-header-nav-main-title">Products</a>
+						   <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="Discretes" class="sub-title">Discretes</a>
+								  <a href="Modules" class="sub-title">Modules</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="품질경영" class="mobile-header-nav-main-title">Service</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="품질경영" class="sub-title">품질경영</a>
+								  <a href="Certification" class="sub-title">인증사항</a>
+							  </li>
+						  </ul>
+					  </li>
+					  <li class="mobile-header-nav-main-li">
+						  <a href="공지사항" class="mobile-header-nav-main-title">Supports & Contacts</a>
+						  <ul class="mobile-header-nav-sub">
+							  <li class="mobile-header-nav-sub-li">
+								  <a href="공지사항" class="sub-title">공지사항</a>
+								  <a href="문의사항" class="sub-title">문의사항</a>
+							  </li>
+						  </ul>
+					  </li>
+					</ul>
+                </nav>
+                <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+                    <span class="menu-item"></span>
+					<span class="menu-item"></span>
+					<span class="menu-item"></span>
+                </a>
+            </div>
+            <!--/모바일 메뉴바-->
+	</div>
+<!--/메뉴 영역-->
+<!--본문 영역-->
+<section class="section01">
+    <div class="bg_img">
+		<div class="bg_text_wrapper">
+			<p class="bg_text_eng">SP semiconductor Co., Ltd.</p>
+			<p class="bg_text_kor">Global 전력반도체 기업</p>
+		</div>
+	</div>
+	<div class="location">
+		<ul>
+			<li><img src="{% static 'img/공통_img/home_icon.png'%}"></li>
+			<li><img src="{% static 'img/공통_img/arrow.png'%}"></li>
+			<li><span>About us</span></li>
+			<li><img src="{% static 'img/공통_img/arrow.png'%}"></li>
+			<li><span>주요연혁</span></li>
+		</ul>
+	</div>
+    <div class="sub_sub_btn_wrapper">
+        <ul>
+            <li id="ceo인사말"><a href="ceo인사말">ceo인사말</a></li>
+			<li id="주요연혁"><a href="주요연혁">주요연혁</a></li>
+			<li id="글로벌파트너"><a href="글로벌파트너">글로벌파트너</a></li>
+			<li id="사업장소개"><a href="사업장소개">사업장소개</a></li>
+        </ul>
+    </div>
+</section>
+<section class="section02">
+	<ul>
+    	<li>
+      		<h2>2020년대</h2>
+			<span class="year">2021</span>
+			<p>03. Littlefuse Supplier Excellence Award 수상</p>
+
+    	  	<span class="year">2020</span>
+			<p>06. 소재부품장비전문기업 인증</p>
+    	</li>
+		<li>
+		  	<h2>2010년대</h2>
+			<span class="year">2018</span>
+			<p>10. AEO 수출입안전관리우수업체 재인증</p>
+
+			<span class="year">2017</span>
+			<p>11. IATF 16949 인증</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISO 14001, 9001 재인증</p>
+
+			<span class="year">2016</span>
+			<p>07. 산업재해예방 유공 포상(고용노동부장관)</p>
+			<p>03. 납세자의 날 관세청장상 수상</p>
+
+			<span class="year">2015</span>
+			<p>07. 산업재해예방 유공 포상(산업안전보건공단)</p>
+
+			<span class="year">2014</span>
+			<p>12. 에스피반도체통신(주) 안산사업장 사업자 등록</p>
+			<p>03. 경기도 지방세 성실납세자 수상</p>
+
+			<span class="year">2013</span>
+			<p>12. AEO 수출입 안전관리 우수업체 인증</p>
+			<p>05. 매입형 및 고정형 LED등기구 KC 인증취득: 10W초과 60W이하(한국표준협회)</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;지하주차장 제품 특허, 디자인 출원</p>
+			<p>02. On-semi 고객 Perfect Quality상 수상</p>
+
+			<span class="year">2012</span>
+		  	<p>11. 직관형 LED램프 제품개발</p>
+			<p>08. LED 투광등기구 제품개발</p>
+			<p>05. 직관형 LED램프 KC 인증취득(한국산업기술시험원)</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;매입형 및 고정형 LED등기구 고효율 인증취득(에너지관리공단)</p>
+			<p>04. 신규사업부 설립(LED조명, 모듈GPK)</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PWR사업부 100M Capa/월 양산물량 확보</p>
+			<p>03. 매입형 및 고정형 LED등기구 KC 인증취득(한국산업기술시험원)</p>
+			<p>01. LED 투광등기구 일본 수출</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LED 실내조명 개발(지하추자장등 16W,18W,평판조명 36W,50W)</p>
+
+			<span class="year">2011</span>
+		  	<p>09. 직관형 LED램프 제품개발</p>
+			<p>05. LED 투광등기구 제품개발</p>
+
+		  	<span class="year">2010</span>
+		  	<p>12. WR사업부 해외수출 $ 66M 달성</p>
+			<p>05. 본관 3층 증축(+354m2)</p>
+		</li>
+		<li>
+		  	<h2>2000년대</h2>
+			<span class="year">2009</span>
+		  	<p>10. Sony Green Partner 재인증</p>
+			<p>06. On-Semi 고객 HV-MOSFET 공통 개발 협력상 수상</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INNO-BIZ 기술혁신형중소기업 인증</p>
+
+			<span class="year">2006</span>
+		  	<p>09. 특허 제 10 - 0629921호 취득</p>
+			<p>06. INFO - BIZ기업 지정(중소기업청)</p>
+			<p>03. 납세자의날 국세청장상 수상</p>
+
+			<span class="year">2005</span>
+		  	<p>11. 5천만불 수출의 탑 수상</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;산업자원부장관 유공자 표창</p>
+
+			<span class="year">2004</span>
+		  	<p>12. ISO/TS16949 인증</p>
+			<p>11. 병역특례업체 지정</p>
+			<p>03. 부천시 중소기업 『 생산성 향상 및 기술혁신 분야 』 대상 수상</p>
+
+			<span class="year">2003</span>
+		  	<p>11. Sony Green Partner 인증서 획득</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3,000 만불 수출의 탑 수상</p>
+			<p>09. spsemi.co.kr 홈페이지 개편</p>
+			<p>08. 경기도 유망 중소기업 선정</p>
+			<p>06. 전산 ERP 'SPRING 2003' OPEN</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;무재해 3배 인증서 획득</p>
+
+			<span class="year">2002</span>
+		  	<p>12. ISO 14001 & QS 9000 사후 심사</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;벤처기업 재지정</p>
+			<p>04. SP빌딩 완공</p>
+			<p>02. 무재해 2배 인증서 획득</p>
+
+			<span class="year">2001</span>
+		  	<p>11. 제 38회 『 무역의 날 』, 2천만불 수출의 탑, 산업자원부장관 표창 수상</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QS 9000 인증 (한국능률협회)</p>
+			<p>03. 우수기업 부천세무서장 상 수상</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISO 14000 인증 (한국능률협회)</p>
+
+			<span class="year">2000</span>
+		  	<p>12. ISO 9002 인증</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;벤처기업 지정</p>
+			<p>11. 에스피반도체통신(주) 기업부설 기술연구소 설립인증</p>
+			<p>09. I.C 생산체제 Set-Up 및 양산</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;김효진 노동부장관 사업장 방문</p>
+			<p>07. 신규공장 준공식</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;기업부설 기술연구소 설립</p>
+			<p>06. 신규공장 허가</p>
+			<p>05. 본사이전(부천시 원미구 도당동 96-1)</p>
+		</li>
+		<li>
+			<h2>1990년대</h2>
+			<span class="year">1999</span>
+			<p>12. 금융감독위원회 회사 등록</p>
+			<p>11. 에스피반도체 부천 제2공장 기공식</p>
+			<p>06. 에스피반도체 제1공장 공장 등록</p>
+			<p>03. 법인등록</p>
+		</li>
+</ul>
+</section>
+
+
+
+
+<!--푸터 영역-->
+<footer>
+	<div class="footer_wrapper">
+		<ul>
+			<li>
+				<a href="#">개인정보보호방침</a>
+			</li>
+			<li>
+				<a href="Discretes">제품소개</a>
+			</li>
+			<li>
+				<a href="사업장소개">사업장안내</a>
+			</li>
+		</ul>
+		<div class="footer_info">
+			<p class="footer_info_회사명">(주)에스피반도체통신</p>
+			<p class="footer_info_대표이사">대표이사 윤수열</p>
+			<p class="footer_info_주소">경기도 부천시 원미구 평천로 832번길 30(도당동)&nbsp;&nbsp;&nbsp;&nbsp;<span>TEL: 032-680-7777</span></p>
+			<p class="footer_info_copyright">COPYRIGHT (C) SPSEMICONDUCTOR & COMMUNICATION.  ALL RIGHTS RESERVED.</p>
+		</div>
+
+	</div>
+</footer>
+<!--/푸터 영역-->
+
+</body>
+</html>
