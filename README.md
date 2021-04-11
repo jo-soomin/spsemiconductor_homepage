@@ -14,7 +14,7 @@ OS : Ubuntu 20.04.2 LTS
 
 프레임워크 : Django 3.1.5
 
-DataBase : Oracle 12c
+DataBase : SQLite
 
 기능 : 게시판(CRUD), 파일(업로드, 다운로드), SMTP, SLIDE, 암호화(encrypt, decrypt), 반응형 웹
 
