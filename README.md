@@ -18,7 +18,7 @@ DataBase : SQLite3
 
 기능 : 게시판(CRUD), 파일(업로드, 다운로드), SMTP, SLIDE, 암호화(encrypt, decrypt), 반응형 웹
 
-사용 LIBRARY 및 API : swifer.js, AOS(Animate On Scroll Library), 카카오 맵 API
+사용 LIBRARY 및 API : swiper.js, AOS(Animate On Scroll Library), 카카오 맵 API
 
 개발 기간: 2021.02.19 ~  2021.04.01
 
